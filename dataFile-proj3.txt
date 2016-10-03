@@ -1,0 +1,99 @@
+// each item is separated by a :. do not add extra white spaces before or after separators
+// enterprise  Name
+MavBuy Inc.
+// emp type: fname : lname : dob : gender : hire date : base salary : value
+AGT:john:smith:4-1-1978:male:4-7-2007:2000.00:10
+AGT:james:bond:12-10-1976:male:2-20-2005:2200.00:12
+ACCT:anne:haathaway:08-13-1984:female:10-24-2006:0.00:40
+WD:katy:dough:07-1-1982:female:11-9-2006:2500.00:0.1
+AGT:Sara:Longbottom:11-13-1980:male:1-2-2010:1800.00:5
+end
+//
+//ITEMS: 1 LINES PER Item AS GIVEN BELOW
+/* item id: company name : condition : shipping cost : store availability : availability date : shipping days : price : type
+SMG900VZWV:Samsung:new:9.87:2,3,4,1,2,3,0,7,13,0:9-21-2014:2:149.99:Cell Phones
+G750GM:Asus:used:25.99:1,2,3,0,0,0,0,3,0,1:9-27-2014:7:1099.99:Computers and Tablets
+6573D003:Canon:new:12.99:12,6,3,4,2,0,13,23,1,1:7-30-2013:3:699.99:Cameras and Camcorders
+DE361LK/A:Apple:new:14.99:3,4,1,2,1,0,15,2,11,10:11-12-2013:3:399.99:Cell Phones
+AG-HPX170:Panasonic:used:38.99:0,0,0,1,0,0,2,0,0,3:10-2-2014:10:3499:Cameras and Camcorders
+MD101LL/A:Apple:new:0:2,0,12,2,3,3,0,4,9,8:9-15-2014:4:1044.99:Computers and Tablets
+920:Nokia:used:0:1,2,1,1,0,0,0,0,2,0:10-1-2014:8:189.99:Cell Phones
+SMG400VAWV:Samsung:new:8.87:1,3,4,0,2,3,0,7,13,0:3-20-2013:2:159.99:Cell Phones
+G850GM:Asus:used:15.99:1,2,2,0,0,0,2,3,0,1:6-27-2013:8:1299.99:Computers and Tablets
+m6-n010dx:HP:used:12.49:1,0,4,3,0,0,0,0,10,2:9-14-2014:10:443.99:Computers and Tablets
+NEXUS7 ASUS-2B32:Google:new:0:3,7,0,1,6,0,6,5,8,0:9-18-2014:3:229.99:Computers and Tablets
+f6-n231dx:HP:used:13.49:1,0,2,3,2,0,1,0,10,2:5-14-2013:8:543.99:Computers and Tablets
+NEXUS5 ASUS-3B42:Google:new:0:3,7,3,2,6,5,6,8,8,10:4-18-2013:4:209.99:Computers and Tablets
+8575B003:Canon:new:15.99:12,2,3,4,0,0,10,23,0,1:9-30-2014:6:599.99:Cameras and Camcorders
+ME461LL/A:Apple:new:11.99:2,4,1,3,0,0,12,2,8,10:9-12-2014:3:299.99:Cell Phones
+Z30:Fujifilm:used:0:0,2,0,0,0,1,1,0,1,1:10-10-2014:8:84.69:Cameras and Camcorders
+AW-HPX270:Panasonic:used:28.99:1,0,1,1,0,0,2,0,0,0:1-22-2013:10:2499:Cameras and Camcorders
+KD201LL/A:Apple:new:0:5,0,12,2,3,4,0,4,2,9:8-25-2013:5:944.99:Computers and Tablets
+1920:Nokia:used:0:1,3,1,2,0,1,0,0,2,0:12-23-2013:8:179.99:Cell Phones
+ZX35:Fujifilm:used:0:2,2,0,6,0,1,4,0,2,1:3-15-2013:5:94.69:Cameras and Camcorders
+end
+//
+/* Customer_id, fname, lname, dob, gender, customer type, address (house #:street:city:state)
+111:Mary:Jones:1-1-1978:female:GOLD:500:UTA Blvd.:Arlington:TX
+222:Duke:Tom:7-1-1976:male:GOLD:415:London Ave.:Sacramento:CA
+333:William:Mars:6-12-1973:male:REGULAR:300:wall st.:New York:NY
+112:Cicilia:David:2-18-1978:female:GOLD:101:Byron Nelson Pkwy.:Southlake:TX
+444:Sally:Johnson:6-15-1979:female:GOLD:209:Moscow Ln.:highland park:IL
+113:Nicole:Sam:1-5-1983:female:REGULAR:303:Josey Ln.:Dallas:TX
+223:David:Joseph:2-12-1971:male:REGULAR:1200:Famous St.:Hollywood:CA
+334:Peter:Jim:1-11-1985:male:REGULAR:43:Las Vegas St.:Schnectady:NY
+445:Max:Jones:12-2-1981:male:REGULAR:219:Lincoln Pl.:Naperville:IL
+224:Domino:Par:11-13-1980:male:REGULAR:666:Exorcist Ave.:anaheim:CA
+end
+//start the menu backward compatibility
+10
+/*make a sale --> menu option:Customer_id:item_id:date:quantity:store_id
+11:111:f6-n231dx:6-30-2013:2:4
+11:111:MD101LL/A:9-16-2014:4:9
+11:111:6573D003:9-21-2013:3:1
+11:111:SMG900VZWV:10-2-2014:1:3
+11:222:1920:2-28-2014:1:6
+11:113:ZX35:4-22-2013:2:4
+11:112:SMG900VZWV:9-23-2014:3:8
+11:112:AG-HPX170:11-2-2014:1:10
+11:445:6573D003:8-23-2013:8:7
+11:445:G850GM:7-23-2013:2:2
+11:445:MD101LL/A:9-18-2014:1:6
+11:112:NEXUS5 ASUS-3B42:3-19-2013:3:5
+/*items bought by client --> menu option: client id: year
+12:111:2013
+12:112:2014
+12:111:*
+12:445:*
+12:222:2014
+12:112:2013
+/* add employee --> menu option:type:fname:lname:dob:gender:date of hire:base salary:value
+13:AGT:John:Hopkins:3-30-1987:MaLe:2-26-2013:1000.00:10
+13:ACCT:Jason:Davis:6-30-1965:malE:2-25-2012:0.00:20.5
+13:WD:Mariana:Struts:2-29-1988:feMaLe:2-25-2012:500.00:0.5
+13:WD:Kate:Wayne:3-23-1983:FEmalE:4-23-2014:700.00:0.6
+13:ACCT:Nicholas:Spark:4-3-1978:MalE:1-1-2011:0.00:23.5
+13:AGT:Scarlett:Weasley:9-1-1980:FeMaLe:2-21-2012:950.00:8
+/* remove employee --> menu option:employee id
+14:1
+14:5
+14:12
+/* compute salary --> menu option: employee id: value : month
+15:0:30:6
+15:1:23:7
+15:9:100:8
+15:2:75:6
+15:7:83:9
+/* sales/expenditure for an item --> menu option: item id
+16:Z30
+16:MD101LL/A
+16:AG-HPX170
+16:f6-n231dx
+16:6573D003
+/*
+17:111:2013
+17:111:*
+17:*:*
+17:112:2014
+/*
+0

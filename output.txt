@@ -1,0 +1,142 @@
+//start the menu backward compatibility
+
+------------------------Menu Item Number: 10
+
+------------ WELCOME TO MavBuy Inc. ------------
+
+Please select an option below:
+1. ) List employees.
+2. ) List clients in a state.
+3. ) List portfolio of a client.
+4. ) Release an employee.
+5. ) Display items for purchasing/selling.
+6. ) Display customer details.
+7. ) Buy an item for a customer.
+8. ) Show menu Project 3.
+0. ) Go Back
+
+/*make a sale --> menu option:Customer_id:item_id:date:quantity:store_id
+---------------------Menu Item Number: 11
+
+Client: 111 Mary	Jones	 bought 2 of item f6-n231dx	 for 979.18 on [6/30/2013] at store #4 with shipping cost: $13.49
+Client: 111 Mary	Jones	 bought 4 of item MD101LL/A	 for 3761.96 on [9/16/2014] at store #9 with shipping cost: $0.00
+Client: 111 Mary	Jones	 bought 3 of item 6573D003	 for 1889.97 on [9/21/2013] at store #1 with shipping cost: $12.99
+Client: 111 Mary	Jones	 bought 1 of item SMG900VZWV	 for 134.99 on [10/2/2014] at store #3 with shipping cost: $9.87
+Client: 222 Duke	Tom	 bought 1 of item 1920	 for 161.99 on [2/28/2014] at store #6 with shipping cost: $0.00
+Client: 113 Nicole	Sam	 bought 2 of item ZX35	 for 189.38 on [4/22/2013] at store #4 with shipping cost: $0.00
+Client: 112 Cicilia	David	 bought 3 of item SMG900VZWV	 for 404.97 on [9/23/2014] at store #8 with shipping cost: $9.87
+Client: 112 Cicilia	David	 bought 1 of item AG-HPX170	 for 3149.10 on [11/2/2014] at store #10 with shipping cost: $38.99
+Client: 445 Max	Jones	 bought 8 of item 6573D003	 for 5599.92 on [8/23/2013] at store #7 with shipping cost: $12.99
+Client: 445 Max	Jones	 bought 2 of item G850GM	 for 2599.98 on [7/23/2013] at store #2 with shipping cost: $15.99
+Client: 445 Max	Jones	 bought 1 of item MD101LL/A	 for 1044.99 on [9/18/2014] at store #6 with shipping cost: $0.00
+Client: 112 Cicilia	David	 bought 3 of item NEXUS5 ASUS-3B42	 for 566.97 on [3/19/2013] at store #5 with shipping cost: $0.00
+/*items bought by client --> menu option: client id: year
+
+---------------------Menu Item Number: 12
+
+Purchases from Client 111 in 2013
+Item f6-n231dx	HP on [6/30/2013]	amount: 2 for: $979.18	 by Mary Jones
+Item 6573D003	Canon on [9/21/2013]	amount: 3 for: $1889.97	 by Mary Jones
+
+Purchases from Client 112 in 2014
+Item SMG900VZWV	Samsung on [9/23/2014]	amount: 3 for: $404.97	 by Cicilia David
+Item AG-HPX170	Panasonic on [11/2/2014]	amount: 1 for: $3149.10	 by Cicilia David
+
+Purchases from Client 111 in all year
+Item f6-n231dx	HP on [6/30/2013]	amount: 2 for: $992.67	 by Mary Jones
+Item MD101LL/A	Apple on [9/16/2014]	amount: 4 for: $3761.96	 by Mary Jones
+Item 6573D003	Canon on [9/21/2013]	amount: 3 for: $1902.96	 by Mary Jones
+Item SMG900VZWV	Samsung on [10/2/2014]	amount: 1 for: $144.86	 by Mary Jones
+
+Purchases from Client 445 in all year
+Item 6573D003	Canon on [8/23/2013]	amount: 8 for: $5612.91	 by Max Jones
+Item G850GM	Asus on [7/23/2013]	amount: 2 for: $2615.97	 by Max Jones
+Item MD101LL/A	Apple on [9/18/2014]	amount: 1 for: $1044.99	 by Max Jones
+
+Purchases from Client 222 in 2014
+Item 1920	Nokia on [2/28/2014]	amount: 1 for: $161.99	 by Duke Tom
+
+Purchases from Client 112 in 2013
+Item NEXUS5 ASUS-3B42	Google on [3/19/2013]	amount: 3 for: $566.97	 by Cicilia David
+/* add employee --> menu option:type:fname:lname:dob:gender:date of hire:base salary:value
+
+---------------------Menu Item Number: 13
+
+ID: 6	AGT	John Hopkins	DOB: 3/30/1987 MaLe	hired on 2/26/2013	 with $1000.00 base + $10.00 OT rate
+ID: 7	ACCT	Jason Davis	DOB: 6/30/1965 malE	hired on 2/25/2012	 with $20.50 per hour
+ID: 8	WD	Mariana Struts	DOB: 2/29/1988 feMaLe	hired on 2/25/2012	 with $500.00 base + $0.50 per click
+ID: 9	WD	Kate Wayne	DOB: 3/23/1983 FEmalE	hired on 4/23/2014	 with $700.00 base + $0.60 per click
+ID: 10	ACCT	Nicholas Spark	DOB: 4/3/1978 MalE	hired on 1/1/2011	 with $23.50 per hour
+ID: 11	AGT	Scarlett Weasley	DOB: 9/1/1980 FeMaLe	hired on 2/21/2012	 with $950.00 base + $8.00 OT rate
+/* remove employee --> menu option:employee id
+---------------------Menu Item Number: 14
+
+Releasing Employee ID: 1
+ID: 1	 AGT	john smith	 4/1/1978	 male
+
+ID: 2	 AGT	james bond	 12/10/1976	 male
+ID: 3	 ACCT	anne haathaway	 8/13/1984	 female
+ID: 4	 WD	katy dough	 7/1/1982	 female
+ID: 5	 AGT	Sara Longbottom	 11/13/1980	 male
+ID: 6	 AGT	John Hopkins	 3/30/1987	 MaLe
+ID: 7	 ACCT	Jason Davis	 6/30/1965	 malE
+ID: 8	 WD	Mariana Struts	 2/29/1988	 feMaLe
+ID: 9	 WD	Kate Wayne	 3/23/1983	 FEmalE
+ID: 10	 ACCT	Nicholas Spark	 4/3/1978	 MalE
+ID: 11	 AGT	Scarlett Weasley	 9/1/1980	 FeMaLe
+
+Releasing Employee ID: 5
+ID: 5	 AGT	Sara Longbottom	 11/13/1980	 male
+
+ID: 2	 AGT	james bond	 12/10/1976	 male
+ID: 3	 ACCT	anne haathaway	 8/13/1984	 female
+ID: 4	 WD	katy dough	 7/1/1982	 female
+ID: 6	 AGT	John Hopkins	 3/30/1987	 MaLe
+ID: 7	 ACCT	Jason Davis	 6/30/1965	 malE
+ID: 8	 WD	Mariana Struts	 2/29/1988	 feMaLe
+ID: 9	 WD	Kate Wayne	 3/23/1983	 FEmalE
+ID: 10	 ACCT	Nicholas Spark	 4/3/1978	 MalE
+ID: 11	 AGT	Scarlett Weasley	 9/1/1980	 FeMaLe
+
+No employee with the ID number 12
+
+ID: 2	 AGT	james bond	 12/10/1976	 male
+ID: 3	 ACCT	anne haathaway	 8/13/1984	 female
+ID: 4	 WD	katy dough	 7/1/1982	 female
+ID: 6	 AGT	John Hopkins	 3/30/1987	 MaLe
+ID: 7	 ACCT	Jason Davis	 6/30/1965	 malE
+ID: 8	 WD	Mariana Struts	 2/29/1988	 feMaLe
+ID: 9	 WD	Kate Wayne	 3/23/1983	 FEmalE
+ID: 10	 ACCT	Nicholas Spark	 4/3/1978	 MalE
+ID: 11	 AGT	Scarlett Weasley	 9/1/1980	 FeMaLe
+
+/* compute salary --> menu option: employee id: value : month
+
+---------------------Menu Item Number: 15
+
+No employee with ID: 0
+No employee with ID: 1
+ID: 9	WD 	Kate Wayne	 Salary: $760.00
+ID: 2	AGT 	james bond	 Salary: $3100.00
+ID: 7	ACCT 	Jason Davis	 Salary: $1701.50
+/* sales/expenditure for an item --> menu option: item id
+
+---------------------Menu Item Number: 16
+
+4 Item: MD101LL/A was sold on 9/16/2014 to Mary Jones for $3761.96
+1 Item: MD101LL/A was sold on 9/18/2014 to Max Jones for $1044.99
+1 Item: AG-HPX170 was sold on 11/2/2014 to Cicilia David for $3188.09
+2 Item: f6-n231dx was sold on 6/30/2013 to Mary Jones for $992.67
+3 Item: 6573D003 was sold on 9/21/2013 to Mary Jones for $1902.96
+8 Item: 6573D003 was sold on 8/23/2013 to Max Jones for $5612.91
+/*
+---------------------Menu Item Number: 17
+
+Membership Status for Client 111 in 2013
+Client: 111 Mary Jones is GOLD purchase a total of $2892.99
+
+Membership Status for Client 111 in *
+Membership Status for Client * in *
+Membership Status for Client 112 in 2014
+Client: 112 Cicilia David is GOLD purchase a total of $3598.05
+
